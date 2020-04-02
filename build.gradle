@@ -36,6 +36,15 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-web')
 
+    compile("org.springframework.boot:spring-boot-starter-mail") 
+    compile("org.springframework:spring-context-support")
+    compile("com.sun.mail:javax.mail")
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf
+    compile ("org.springframework.boot:spring-boot-starter-thymeleaf")
+    
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+
     compile('com.h2database:h2')
     compile('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
